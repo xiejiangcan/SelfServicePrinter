@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="SelfServicePrinter.Views.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:SelfServicePrinter.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="574" d:DesignWidth="962">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="31"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        
+            <md:ColorZone Grid.Row="0"
+                          Mode="PrimaryLight">
+                <DockPanel LastChildFill="True">
+                    <Label DockPanel.Dock="Right" Margin="16, 0" VerticalAlignment="Center">
+                        <Hyperlink Name="HLink"
+                                   NavigateUri="http://www.baidu.com/"
+                                   Click="Hyperlink_Click"
+                                   Foreground="#4f638f"
+                                   MouseMove="HLink_MouseMove"
+                                   MouseLeave="HLink_MouseLeave">
+                            查看更多>
+                        </Hyperlink>
+                    </Label>
+                    <StackPanel Orientation="Horizontal" Margin="16,5">
+                        <Image Source="/Resource/Image/notice.png" Margin="10, 0"/>
+                        <TextBlock Text="店铺公告：欢迎光临，四方印刷红星店" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </DockPanel>
+            </md:ColorZone>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="255"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="微信扫码上传" HorizontalAlignment="Center" Margin="0, 25, 0, 10" FontSize="16"/>
+                <Border Grid.Row="1" BorderThickness="1" Width="200" Height="200" BorderBrush="Gray"/>
+                <Image Grid.Row="1" Source="/Resource/Image/二维码.png" Width="174" Height="174"/>
+                <TextBlock Grid.Row="2" Text="微信扫码上传" HorizontalAlignment="Center" Margin="0, 25, 0, 10" FontSize="16"/>
+                <Border Grid.Row="3" BorderThickness="1" Width="200" Height="200" BorderBrush="Gray"/>
+                <Image Grid.Row="3" Source="/Resource/Image/U盘.png" Width="122" Height="122"/>
+                <Image Grid.Row="3" Source="/Resource/Image/u-disk.png" Width="40" Height="60"/>
+                <TextBlock Grid.Row="3" Text="点击上传文件" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,20" Panel.ZIndex="1"/>
+
+            </Grid>
+            
+            <TabControl Grid.Column="1">
+                <TabItem>
+                    
+                </TabItem>
+            </TabControl>
+            
+        </Grid>
+    </Grid>
+</UserControl>

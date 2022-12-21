@@ -1,0 +1,23 @@
+﻿<prism:PrismApplication x:Class="SelfServicePrinter.App"
+                        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                        xmlns:local="clr-namespace:SelfServicePrinter"
+                        xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+                        xmlns:prism="http://prismlibrary.com/">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <md:BundledTheme BaseTheme="Dark"
+                                             PrimaryColor="DeepPurple"
+                                             SecondaryColor="Lime" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <SolidColorBrush x:Key="PrimaryHueLightBrush" Color="#e8edf8"/>
+            <SolidColorBrush x:Key="PrimaryHueLightForegroundBrush" Color="#4f638f"/>
+            <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="#4f638f"/>
+            <SolidColorBrush x:Key="PrimaryHueMidForegroundBrush" Color="#FFFFFF"/>
+            <SolidColorBrush x:Key="PrimaryHueDarkBrush" Color="#4f638f"/>
+            <SolidColorBrush x:Key="PrimaryHueDarkForegroundBrush" Color="#FFFFFF"/>
+        </ResourceDictionary>
+    </Application.Resources>
+</prism:PrismApplication>
