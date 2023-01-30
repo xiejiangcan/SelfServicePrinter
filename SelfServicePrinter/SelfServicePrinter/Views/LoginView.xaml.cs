@@ -16,28 +16,13 @@ using System.Windows.Shapes;
 namespace SelfServicePrinter.Views
 {
     /// <summary>
-    /// HomeView.xaml 的交互逻辑
+    /// LoginView.xaml 的交互逻辑
     /// </summary>
-    public partial class HomeView : UserControl
+    public partial class LoginView : UserControl
     {
-        public HomeView()
+        public LoginView()
         {
             InitializeComponent();
-        }
-
-        private void HLink_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void HLink_MouseLeave(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void HLink_MouseMove(object sender, MouseEventArgs e)
-        {
-
         }
     }
 }

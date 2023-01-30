@@ -13,31 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SelfServicePrinter.Views
+namespace SelfServicePrinter.Views.Dialogs
 {
     /// <summary>
-    /// HomeView.xaml 的交互逻辑
+    /// PrintSettingView.xaml 的交互逻辑
     /// </summary>
-    public partial class HomeView : UserControl
+    public partial class PrintSettingView : UserControl
     {
-        public HomeView()
+        public PrintSettingView()
         {
             InitializeComponent();
-        }
-
-        private void HLink_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void HLink_MouseLeave(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void HLink_MouseMove(object sender, MouseEventArgs e)
-        {
-
         }
     }
 }
