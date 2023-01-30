@@ -169,7 +169,6 @@ namespace SelfServicePrinter.ViewModels
 
             pdf.PrintSettings.SelectPageRange(11, 19);
             pdf.Print();
-
         }
 
         private void Delete()
