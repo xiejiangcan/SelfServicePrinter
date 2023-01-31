@@ -8,16 +8,49 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <md:BundledTheme BaseTheme="Dark"
-                                             PrimaryColor="DeepPurple"
-                                             SecondaryColor="Lime" />
+                                 PrimaryColor="DeepPurple"
+                                 SecondaryColor="Lime" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
             </ResourceDictionary.MergedDictionaries>
-            <SolidColorBrush x:Key="PrimaryHueLightBrush" Color="#e8edf8"/>
-            <SolidColorBrush x:Key="PrimaryHueLightForegroundBrush" Color="#4f638f"/>
-            <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="#4f638f"/>
-            <SolidColorBrush x:Key="PrimaryHueMidForegroundBrush" Color="#FFFFFF"/>
-            <SolidColorBrush x:Key="PrimaryHueDarkBrush" Color="#4f638f"/>
-            <SolidColorBrush x:Key="PrimaryHueDarkForegroundBrush" Color="#FFFFFF"/>
+            <SolidColorBrush x:Key="PrimaryHueLightBrush"
+                             Color="#e8edf8" />
+            <SolidColorBrush x:Key="PrimaryHueLightForegroundBrush"
+                             Color="#4f638f" />
+            <SolidColorBrush x:Key="PrimaryHueMidBrush"
+                             Color="#4f638f" />
+            <SolidColorBrush x:Key="PrimaryHueMidForegroundBrush"
+                             Color="#FFFFFF" />
+            <SolidColorBrush x:Key="PrimaryHueDarkBrush"
+                             Color="#4f638f" />
+            <SolidColorBrush x:Key="PrimaryHueDarkForegroundBrush"
+                             Color="#FFFFFF" />
+
+            <Style x:Key="ColumnHeaderStyle"
+                   TargetType="DataGridColumnHeader">
+                <Setter Property="HorizontalContentAlignment"
+                        Value="Center" />
+                <Setter Property="Background" Value="Transparent"/>
+            </Style>
+
+            <DrawingBrush x:Key="borderBrush"
+                          Viewport="0,0,8,8"
+                          ViewportUnits="Absolute"
+                          TileMode="Tile">
+                <DrawingBrush.Drawing>
+                    <DrawingGroup>
+                        <GeometryDrawing Brush="Black">
+                            <GeometryDrawing.Geometry>
+                                <GeometryGroup>
+                                    <RectangleGeometry Rect="0,0,50,50" />
+                                    <RectangleGeometry Rect="50,50,50,50" />
+                                </GeometryGroup>
+                            </GeometryDrawing.Geometry>
+                        </GeometryDrawing>
+                    </DrawingGroup>
+                </DrawingBrush.Drawing>
+            </DrawingBrush>
+
         </ResourceDictionary>
+
     </Application.Resources>
 </prism:PrismApplication>
