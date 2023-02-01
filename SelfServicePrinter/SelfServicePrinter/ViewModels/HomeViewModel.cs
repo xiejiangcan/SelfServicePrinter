@@ -30,12 +30,66 @@ namespace SelfServicePrinter.ViewModels
            : base(provider)
         {
             ExecuteCommand = new DelegateCommand<string>(Execute);
+            OpenDirCommand = new DelegateCommand<object>(OpenDir);
+            DeleteCommand = new DelegateCommand<object>(Delete);
             dialogHost = provider.Resolve<IDialogHostService>();
             PrintSettingModel = new PrintSettingModel();
+
+            PrePrintFiles = new ObservableCollection<PrePrintFileModel>();
+            PrePrintFiles.Add(new PrePrintFileModel()
+            {
+                FileName = "a.pdf",
+                FileDir= "D:\\DefaultSource\\SelfServicePrinter\\SelfServicePrinter\\SelfServicePrinter\\Resource\\information\\SelfPrint\\PC端",
+                ProgressValue = 10
+            });
+            PrePrintFiles.Add(new PrePrintFileModel()
+            {
+                FileName = "b.pdf",
+                FileDir = "D:\\DefaultSource\\SelfServicePrinter\\SelfServicePrinter\\SelfServicePrinter\\Resource\\information\\SelfPrint\\PC端",
+                ProgressValue = 20
+            });
+            PrePrintFiles.Add(new PrePrintFileModel()
+            {
+                FileName = "c.pdf",
+                FileDir = "D:\\DefaultSource\\SelfServicePrinter\\SelfServicePrinter\\SelfServicePrinter\\Resource\\information\\SelfPrint\\PC端",
+                ProgressValue = 30
+            });
+            PrePrintFiles.Add(new PrePrintFileModel()
+            {
+                FileName = "d.pdf",
+                FileDir = "D:\\DefaultSource\\SelfServicePrinter\\SelfServicePrinter\\SelfServicePrinter\\Resource\\information\\SelfPrint\\PC端",
+                ProgressValue = 50
+            });
         }
 
+        private bool _prePrintAllCheck;
+        /// <summary>
+        /// 预打印全选
+        /// </summary>
+        public bool PrePrintAllCheck
+        {
+            get { return _prePrintAllCheck; }
+            set 
+            { 
+                _prePrintAllCheck = value;
+                RaisePropertyChanged();
+
+                foreach (var file in PrePrintFiles)
+                {
+                    file.Checked = value;
+                }
+            }
+        }
+        
+        /// <summary>
+        /// 预打印列表
+        /// </summary>
+        public ObservableCollection<PrePrintFileModel> PrePrintFiles { get; set; }
+
+        /// <summary>
+        /// 一般执行命令
+        /// </summary>
         public DelegateCommand<string> ExecuteCommand { get; private set; }
-        public PrintSettingModel PrintSettingModel { get; set; }
 
         private void Execute(string obj)
         {
@@ -46,6 +100,49 @@ namespace SelfServicePrinter.ViewModels
                 case "删除": Delete(); break;
             }
         }
+
+        /// <summary>
+        /// 打开预打印文件路径命令
+        /// </summary>
+        public DelegateCommand<object> OpenDirCommand { get; private set; }
+
+        private void OpenDir(object obj)
+        {
+            if (obj == null || obj is not PrePrintFileModel)
+            {
+                return;
+            }
+
+            var ppf = obj as PrePrintFileModel;
+            if (ppf == null)
+                return;
+
+            System.Diagnostics.Process.Start("Explorer.exe", ppf.FileDir);
+        }
+
+        /// <summary>
+        /// 删除预打印文件
+        /// </summary>
+        public DelegateCommand<object> DeleteCommand { get; private set; }
+
+        private void Delete(object obj)
+        {
+            if (obj == null || obj is not PrePrintFileModel)
+            {
+                return;
+            }
+
+            var ppf = obj as PrePrintFileModel;
+            if (ppf == null)
+                return;
+
+            PrePrintFiles.Remove(ppf);
+        }
+
+        /// <summary>
+        /// 打印设置执行命令
+        /// </summary>
+        public PrintSettingModel PrintSettingModel { get; set; }
 
         private async void Setting()
         {

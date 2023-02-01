@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F9D90359-2274-41A6-884B-647732FAE2D9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YUTU</RootNamespace>
+    <AssemblyName>YUTU</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ApplicationIcon>Resources\bole.ico</ApplicationIcon>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/YUTU/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+    <NoWarn>CS0168;CS0169;CS0414;CS0649;CS0067;CS0219;CS0162;CS0618</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Cells">
+      <HintPath>Library\DLL\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.HvDeviceAxLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="AxInterop.ReportClientProj1, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="BoleDB, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="CokiSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2a8446cc1d47a3ed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Administrator\Desktop\CokiSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetPrint, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="DotNetSpeech, Version=5.1.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HslCommunication, Version=7.0.1.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL" />
+    <Reference Include="Iesi.Collections, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.4\lib\net461\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.HvDeviceAxLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Interop.ReportClientProj1, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="LCERPUtil, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.5.3.8\lib\net461\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.JetDriver, Version=2.0.0.1001, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq.EagerFetching, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.EagerFetching.2.2.0\lib\net45\Remotion.Linq.EagerFetching.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Doc, Version=11.1.0.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.Doc.11.1.0\lib\net40\Spire.Doc.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=9.1.0.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.Doc.11.1.0\lib\net40\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Speech">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode">
+      <HintPath>Library\DLL\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="ZGraph, Version=1.0.5068.25170, Culture=neutral, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\Common\ChineseDescriptionAttribute.cs" />
+    <Compile Include="BLL\Common\ClassValueCopier.cs" />
+    <Compile Include="BLL\Common\Cryptography\AES.cs" />
+    <Compile Include="BLL\Common\Cryptography\Cryptographer.cs" />
+    <Compile Include="BLL\Common\Cryptography\DES.cs" />
+    <Compile Include="BLL\Common\Cryptography\EncryptCommon.cs" />
+    <Compile Include="BLL\Common\Cryptography\Enum.cs" />
+    <Compile Include="BLL\Common\Cryptography\HashAlgorithm.cs" />
+    <Compile Include="BLL\Common\Cryptography\MD5.cs" />
+    <Compile Include="BLL\Common\Cryptography\SHA1.cs" />
+    <Compile Include="BLL\Common\Cryptography\SymmetricAlgorithm.cs" />
+    <Compile Include="BLL\Common\DevelopTool.cs" />
+    <Compile Include="BLL\Common\DigitToChnText.cs" />
+    <Compile Include="BLL\Common\ET99\ET99_API.cs" />
+    <Compile Include="BLL\Common\ET99\Seed.cs" />
+    <Compile Include="BLL\Common\ET99\SetSeed.cs" />
+    <Compile Include="BLL\Common\FileOperate.cs" />
+    <Compile Include="BLL\Common\FTPHelper.cs" />
+    <Compile Include="BLL\Common\GlobalParm.cs" />
+    <Compile Include="BLL\Common\HardDiskInfo.cs" />
+    <Compile Include="BLL\Common\HexConvert.cs" />
+    <Compile Include="BLL\Common\IniFile.cs" />
+    <Compile Include="BLL\Common\KeyValue.cs" />
+    <Compile Include="BLL\Common\log.cs" />
+    <Compile Include="BLL\Common\MyMessageBox.cs" />
+    <Compile Include="BLL\Common\RuntimeMonitor.cs" />
+    <Compile Include="BLL\Common\SelfAnswer.cs" />
+    <Compile Include="BLL\Common\Tools.cs" />
+    <Compile Include="BLL\Common\XMLAnalyze.cs" />
+    <Compile Include="BLL\Global\LocalConfig.cs" />
+    <Compile Include="BLL\Global\Login.cs" />
+    <Compile Include="ProgramException.cs" />
+    <Compile Include="ThirdPartyApi\ApiHelper.cs" />
+    <Compile Include="ThirdPartyApi\ApiYnHelper.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ThirdPartyApi\HttpHelper.cs" />
+    <Compile Include="UIL\Common\Win32\WindowOperate.cs" />
+    <Compile Include="UIL\Main\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIL\Main\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIL\Main\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIL\Main\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIL\Main\Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIL\Main\Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIL\Main\Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIL\Main\Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIL\Main\FrmLoginV1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIL\Main\FrmLoginV1.Designer.cs">
+      <DependentUpon>FrmLoginV1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIL\Main\FrmMain1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIL\Main\FrmMain1.Designer.cs">
+      <DependentUpon>FrmMain1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIL\Main\FrmMain2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIL\Main\FrmMain2.Designer.cs">
+      <DependentUpon>FrmMain2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIL\Main\FrmPrinterSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIL\Main\FrmPrinterSetting.Designer.cs">
+      <DependentUpon>FrmPrinterSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIL\Main\TestGridModel.cs" />
+    <Compile Include="UIL\Main\UCTestGridTable_CustomCell.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIL\Main\UCTestGridTable_CustomCell.designer.cs">
+      <DependentUpon>UCTestGridTable_CustomCell.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up_plc.png" />
+    <None Include="Resources\dzCar.png" />
+    <None Include="Resources\Cctv.png" />
+    <None Include="Resources\red_plc.png" />
+    <None Include="Resources\gree_plc.png" />
+    <None Include="Resources\close_plc.png" />
+    <None Include="Resources\down_plc.png" />
+    <None Include="Resources\start_plc.png" />
+    <None Include="Resources\stop_plc.png" />
+    <None Include="Resources\loginV1_bg.png" />
+    <None Include="Resources\loginV2_bg.png" />
+    <Content Include="BLL\Common\ET99\FT_ET99_API.h" />
+    <None Include="Resources\toolbar_print.png" />
+    <None Include="Resources\toolbar_bulk.png" />
+    <None Include="Resources\toolbar_queue.png" />
+    <None Include="Resources\toolbar_guard.png" />
+    <None Include="Resources\toolbar_reception.png" />
+    <None Include="Resources\toolbar_weight.png" />
+    <None Include="Resources\toolbar_bag.png" />
+    <None Include="Resources\toolbar_card.png" />
+    <EmbeddedResource Include="UIL\Main\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIL\Main\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIL\Main\Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIL\Main\Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIL\Main\FrmLoginV1.resx">
+      <DependentUpon>FrmLoginV1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIL\Main\FrmMain1.resx">
+      <DependentUpon>FrmMain1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIL\Main\FrmMain2.resx">
+      <DependentUpon>FrmMain2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIL\Main\FrmPrinterSetting.resx">
+      <DependentUpon>FrmPrinterSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIL\Main\UCTestGridTable_CustomCell.resx">
+      <DependentUpon>UCTestGridTable_CustomCell.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\onebit_06.png" />
+    <None Include="Resources\onebit_04.png" />
+    <None Include="Resources\onebit_03.png" />
+    <None Include="Resources\onebit_02.png" />
+    <None Include="Resources\onebit_01.png" />
+    <None Include="Resources\green.png" />
+    <None Include="Resources\chongxinchaxun.png" />
+    <None Include="Resources\fuwei.png" />
+    <None Include="Resources\baocun.png" />
+    <None Include="Resources\chaxun1.png" />
+    <None Include="Resources\chaxun.png" />
+    <None Include="Resources\benjishezhi.png" />
+    <None Include="Resources\chakantupian.png" />
+    <None Include="Resources\daochu.png" />
+    <None Include="Resources\dayin.png" />
+    <None Include="Resources\daozhasheng.png" />
+    <None Include="Resources\daozhaluo.png" />
+    <None Include="Resources\find.png" />
+    <None Include="Resources\guolv.png" />
+    <None Include="Resources\bole.ico" />
+    <None Include="Resources\denglu_hover.png" />
+    <Content Include="Resources\auto_confirm.png" />
+    <Content Include="Resources\auto_return.png" />
+    <Content Include="Resources\auto_sendbtn.png" />
+    <Content Include="Resources\leftarrow.gif" />
+    <None Include="Resources\leftarrow.png" />
+    <None Include="Resources\red.png" />
+    <None Include="Resources\qidong.png" />
+    <None Include="Resources\quanxian.png" />
+    <None Include="Resources\liancha.png" />
+    <None Include="Resources\paixu.png" />
+    <None Include="Resources\login_tuichu.png" />
+    <None Include="Resources\login_denglu.png" />
+    <None Include="Resources\login_tuichu_gray.png" />
+    <None Include="Resources\login_denglu_gray.png" />
+    <None Include="Resources\login_denglu1.png" />
+    <None Include="Resources\peizhi.png" />
+    <None Include="Resources\login_tuichu1.png" />
+    <Content Include="Resources\loginV3_close.png" />
+    <Content Include="Resources\loginV3_txtbg.png" />
+    <Content Include="Resources\nopic.png" />
+    <Content Include="Resources\nosignal.png" />
+    <Content Include="Resources\rightarrow.gif" />
+    <None Include="Resources\Serach_new.png" />
+    <None Include="Resources\rili.png" />
+    <None Include="Resources\xiayitiao.png" />
+    <None Include="Resources\shangyitiao.png" />
+    <None Include="Resources\shenpi.png" />
+    <None Include="Resources\yulan.png" />
+    <None Include="Resources\xiugai.png" />
+    <None Include="Resources\shanchu.png" />
+    <None Include="Resources\zengjia.png" />
+    <None Include="Resources\tuichu.png" />
+    <None Include="Resources\shezhi.png" />
+    <None Include="Resources\tingzhi.png" />
+    <None Include="Resources\rightarrow.png" />
+    <None Include="Resources\rightbtn2.png" />
+    <None Include="Resources\rightbtn1.png" />
+    <None Include="Resources\rightbtn0.png" />
+    <None Include="Resources\rightbtn3.png" />
+    <None Include="Resources\webserives.png" />
+    <None Include="Resources\Warning.png" />
+    <None Include="Resources\Tip.png" />
+    <None Include="Resources\Selected.ico" />
+    <None Include="Resources\redLight.png" />
+    <None Include="Resources\Progress.gif" />
+    <None Include="Resources\Opened.ico" />
+    <None Include="Resources\Node2.ico" />
+    <None Include="Resources\Node1Opened.ico" />
+    <None Include="Resources\Node1.ico" />
+    <None Include="Resources\Meter_yes.png" />
+    <None Include="Resources\Meter_t.png" />
+    <None Include="Resources\Meter_point.png" />
+    <None Include="Resources\Meter_no.png" />
+    <None Include="Resources\Meter_kg.png" />
+    <None Include="Resources\Meter_back.png" />
+    <None Include="Resources\greenLight.png" />
+    <None Include="Resources\ftp.png" />
+    <None Include="Resources\Error.png" />
+    <None Include="Resources\downbtn.png" />
+    <None Include="Resources\Closed.ico" />
+    <None Include="Resources\ArrowUp.png" />
+    <None Include="Resources\ArrowRight.png" />
+    <None Include="Resources\ArrowLeft.png" />
+    <None Include="Resources\ArrowDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\HZH_Controls\HZH_Controls.csproj">
+      <Project>{af32e163-c577-4cbc-a072-0dc1ce0e1da3}</Project>
+      <Name>HZH_Controls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Office">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>99</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Word">
+      <Guid>{00020905-0000-4B30-A977-D214852036FF}</Guid>
+      <VersionMajor>3</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
